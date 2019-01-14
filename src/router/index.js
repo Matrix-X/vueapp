@@ -1,14 +1,14 @@
 import Vue from 'vue'
-import VueResource from 'vue-resource'
 import Router from 'vue-router'
 import Test from '@/components/Test'
 import Users from '@/components/Users'
 // import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
-Vue.use(VueResource)
 
 export default new Router({
+  mode: 'history',
+  base: __dirname,
   routes: [
     // {
     //   path: '/',
@@ -20,11 +20,11 @@ export default new Router({
       name: 'Users',
       component: Users
     },
-    // {
-    //   path: '/',
-    //   name: 'Test',
-    //   component: Test,
-    //   props: { msg: "Hello Prop" }
-    // },
+    {
+      path: '/test',
+      name: 'Test',
+      component: Test,
+      props: { msg: "Hello Prop" }
+    },
   ]
 })

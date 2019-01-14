@@ -38,41 +38,30 @@ export default {
     data() {
         return {
           newUser: {},
-          users: [
-            {
-              name: 'John Doe',
-              email: 'JDoe@gmail.com',
-              contacted: false
-            },
-            {
-              name: 'Steven Smith',
-              email: 'SSmith@gmail.com',
-              contacted: false
-            },
-            {
-              name: 'Tom White',
-              email: 'TWhite@gmail.com',
-              contacted: false
-            }
-          ]
+          users: []
         }
     },
     methods: {
       addUser: function(e){
-        e.preventDefault({
+        e.preventDefault();
+        console.log("add User");
+        this.users.push({
           name: this.newUser.name,
           email: this.newUser.email,
           contacted: false
         });
-        console.log("add User");
-        this.users.push();
       },
       deleteUser: function (user) {
         this.users.splice(this.users.indexOf(user), 1);
-      },
-      created: function(){
-        console.log("created ran...");
       }
+    },
+    created: function(){
+      // console.log("created ran...");
+      this.$http.get('https://jsonplaceholder.typicode.com/users')
+      .then(function(response){
+          // console.log(response.data);
+          this.users = response.data;
+      });
     },
     computed: {
     }
