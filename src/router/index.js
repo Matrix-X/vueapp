@@ -6,6 +6,7 @@ import AttributeBinding from '@/components/AttributeBinding'
 import Computed from '@/components/computed'
 import Components from '@/components/Components'
 import Message from '@/components/Message'
+import Modal from '@/components/Modal'
 // import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
@@ -52,6 +53,12 @@ export default new Router({
       path: '/message',
       name: 'Message',
       component: Message,
+      props: {  }
+    },
+    {
+      path: '/modal',
+      name: 'Modal',
+      component: Modal,
       props: {  }
     }
   ]

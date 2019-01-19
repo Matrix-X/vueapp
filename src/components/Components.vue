@@ -5,10 +5,15 @@
 <template>
 
   <div class="components">
-    
+
     <!-- <task-list></task-list> -->
 
-    <message title="helloworld" body=" Lorem ipsum dolor sit amet "></message>
+    <!-- <message title="helloworld" body=" Lorem ipsum dolor sit amet "></message> -->
+
+    <modal v-show="showModal" @close="showModal=false">
+      <p>we insert any text here.</p>
+    </modal>
+    <button @click="showModal=true" >show button</button>
 
   </div>
 
@@ -22,11 +27,12 @@
 // add new task component
 import Vue from 'vue'
 import Message from '@/components/Message'
+import Modal from '@/components/Modal'
 
 Vue.component('task-list', {
   template:`
     <div>
-      <task v-for="task in tasks">{{ task.task }}</task>
+      <task v-for="(task, index) in tasks" v-bind:key="task.task">{{ task.task }}</task>
     </div>
   `,
   data() {
@@ -54,7 +60,7 @@ export default {
     props: {},
     data() {
         return {
-
+          showModal: false
         }
     },
     methods: {
@@ -67,7 +73,8 @@ export default {
 
     },
     components: {
-      Message
+      Message,
+      Modal
     }
 }
 
