@@ -1,0 +1,8 @@
+html	/Library/WebServer/Documents/Vue/vueApp/index.html	/^<html>$/;"	function	line:2
+head	/Library/WebServer/Documents/Vue/vueApp/index.html	/^  <head>$/;"	function	line:3
+meta	/Library/WebServer/Documents/Vue/vueApp/index.html	/^    <meta charset="utf-8">$/;"	function	line:4
+meta	/Library/WebServer/Documents/Vue/vueApp/index.html	/^    <meta name="viewport" content="width=device-width,initial-scale=1.0">$/;"	function	line:5
+title	/Library/WebServer/Documents/Vue/vueApp/index.html	/^    <title>vueapp<\/title>$/;"	function	line:6
+link	/Library/WebServer/Documents/Vue/vueApp/index.html	/^    <link rel="stylesheet" href="https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/bulma\/0.7.2\/css\/bulma.min.css" \/>$/;"	function	line:7
+body	/Library/WebServer/Documents/Vue/vueApp/index.html	/^  <body>$/;"	function	line:9
+div	/Library/WebServer/Documents/Vue/vueApp/index.html	/^    <div id="app"><\/div>$/;"	function	line:10

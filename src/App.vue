@@ -7,6 +7,7 @@
         <li><router-link to="/attributeBinding">attributeBinding</router-link></li>
         <li><router-link to="/computed">Compputed</router-link></li>
         <li><router-link to="/components">Components</router-link></li>
+        <li><router-link to="/message">Message</router-link></li>
     </ul>
     <router-view/>
   </div>
@@ -27,4 +28,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>

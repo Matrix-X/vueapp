@@ -5,6 +5,7 @@ import Users from '@/components/Users'
 import AttributeBinding from '@/components/AttributeBinding'
 import Computed from '@/components/computed'
 import Components from '@/components/Components'
+import Message from '@/components/Message'
 // import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
@@ -45,6 +46,12 @@ export default new Router({
       path: '/components',
       name: 'Components',
       component: Components,
+      props: {  }
+    },
+    {
+      path: '/message',
+      name: 'Message',
+      component: Message,
       props: {  }
     }
   ]

@@ -5,7 +5,11 @@
 <template>
 
   <div class="components">
-    <task-list></task-list>
+    
+    <!-- <task-list></task-list> -->
+
+    <message title="helloworld" body=" Lorem ipsum dolor sit amet "></message>
+
   </div>
 
 
@@ -17,6 +21,7 @@
 
 // add new task component
 import Vue from 'vue'
+import Message from '@/components/Message'
 
 Vue.component('task-list', {
   template:`
@@ -60,6 +65,9 @@ export default {
     },
     computed: {
 
+    },
+    components: {
+      Message
     }
 }
 
