@@ -4,7 +4,7 @@ import Test from '@/components/Test'
 import Users from '@/components/Users'
 import AttributeBinding from '@/components/AttributeBinding'
 import Computed from '@/components/computed'
-import Components from '@/components/components'
+import Components from '@/components/Components'
 // import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
@@ -46,6 +46,6 @@ export default new Router({
       name: 'Components',
       component: Components,
       props: {  }
-    },
+    }
   ]
 })
