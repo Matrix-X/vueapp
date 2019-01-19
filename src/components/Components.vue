@@ -5,9 +5,7 @@
 <template>
 
   <div class="components">
-    <task>go to the store</task>
-    <task>go to the bank</task>
-    <task>go to work</task>
+    <task-list></task-list>
   </div>
 
 
@@ -19,6 +17,25 @@
 
 // add new task component
 import Vue from 'vue'
+
+Vue.component('task-list', {
+  template:`
+    <div>
+      <task v-for="task in tasks">{{ task.task }}</task>
+    </div>
+  `,
+  data() {
+    return {
+      tasks: [
+        { task: "Go to the store", completed: true},
+        { task: "Go to the email", completed: false},
+        { task: "Go to the farm", completed: true},
+        { task: "Go to work", completed: false}
+      ]
+    };
+  }
+
+});
 
 Vue.component('task', {
   template: '<li><slot></slot></li>'
