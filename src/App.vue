@@ -6,6 +6,7 @@
         <li><router-link to="/test">Test</router-link></li>
         <li><router-link to="/attributeBinding">attributeBinding</router-link></li>
         <li><router-link to="/computed">Compputed</router-link></li>
+        <li><router-link to="/components">Components</router-link></li>
     </ul>
     <router-view/>
   </div>
