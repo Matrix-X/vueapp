@@ -6,7 +6,8 @@ import AttributeBinding from '@/components/AttributeBinding'
 import Computed from '@/components/computed'
 import Components from '@/components/Components'
 import Message from '@/components/Message'
-import Modal from '@/components/Modal'
+import ExeciseModal from '@/components/ExeciseModal'
+import ExeciseTabs from '@/components/ExeciseTabs'
 // import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
@@ -58,7 +59,13 @@ export default new Router({
     {
       path: '/modal',
       name: 'Modal',
-      component: Modal,
+      component: ExeciseModal,
+      props: {  }
+    },
+    {
+      path: '/tabs',
+      name: 'Tabs',
+      component: ExeciseTabs,
       props: {  }
     }
   ]
