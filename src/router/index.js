@@ -9,6 +9,7 @@ import Message from '@/components/Message'
 import ExeciseModal from '@/components/ExeciseModal'
 import ExeciseTabs from '@/components/ExeciseTabs'
 import ExeciseEvents from '@/components/ExeciseEvents'
+import ExeciseSlot from '@/components/ExeciseSlot'
 // import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
@@ -73,6 +74,12 @@ export default new Router({
       path: '/events',
       name: 'Events',
       component: ExeciseEvents,
+      props: {  }
+    },
+    {
+      path: '/slot',
+      name: 'Slot',
+      component: ExeciseSlot,
       props: {  }
     }
   ]
