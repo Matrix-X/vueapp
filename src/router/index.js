@@ -8,6 +8,7 @@ import Components from '@/components/Components'
 import Message from '@/components/Message'
 import ExeciseModal from '@/components/ExeciseModal'
 import ExeciseTabs from '@/components/ExeciseTabs'
+import ExeciseEvents from '@/components/ExeciseEvents'
 // import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
@@ -66,6 +67,12 @@ export default new Router({
       path: '/tabs',
       name: 'Tabs',
       component: ExeciseTabs,
+      props: {  }
+    },
+    {
+      path: '/events',
+      name: 'Events',
+      component: ExeciseEvents,
       props: {  }
     }
   ]

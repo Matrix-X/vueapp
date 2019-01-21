@@ -4,8 +4,8 @@
 
 <template>
 
-  <div class="default">
-    
+  <div class="container">
+
   </div>
 </template>
 
