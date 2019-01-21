@@ -10,6 +10,7 @@ import ExeciseModal from '@/components/ExeciseModal'
 import ExeciseTabs from '@/components/ExeciseTabs'
 import ExeciseEvents from '@/components/ExeciseEvents'
 import ExeciseSlot from '@/components/ExeciseSlot'
+import ExeciseInlineTemplate from '@/components/ExeciseInlineTemplate'
 // import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
@@ -80,6 +81,12 @@ export default new Router({
       path: '/slot',
       name: 'Slot',
       component: ExeciseSlot,
+      props: {  }
+    },
+    {
+      path: '/inlineTemplate',
+      name: 'InlineTemplate',
+      component: ExeciseInlineTemplate,
       props: {  }
     }
   ]

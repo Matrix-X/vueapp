@@ -12,6 +12,7 @@
         <li><router-link to="/tabs">Tabs</router-link></li>
         <li><router-link to="/events">Events</router-link></li>
         <li><router-link to="/slot">Slot</router-link></li>
+        <li><router-link to="/inlineTemplate">InlineTemplate</router-link></li>
     </ul>
     <router-view/>
   </div>
