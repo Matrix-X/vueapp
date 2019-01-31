@@ -11,6 +11,7 @@ import ExeciseTabs from '@/components/ExeciseTabs'
 import ExeciseEvents from '@/components/ExeciseEvents'
 import ExeciseSlot from '@/components/ExeciseSlot'
 import ExeciseInlineTemplate from '@/components/ExeciseInlineTemplate'
+import ExeciseAjax from '@/components/ExeciseAjax'
 // import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
@@ -87,6 +88,12 @@ export default new Router({
       path: '/inlineTemplate',
       name: 'InlineTemplate',
       component: ExeciseInlineTemplate,
+      props: {  }
+    },
+    {
+      path: '/ajax',
+      name: 'Ajax',
+      component: ExeciseAjax,
       props: {  }
     }
   ]
