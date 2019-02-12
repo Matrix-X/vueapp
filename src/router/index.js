@@ -12,6 +12,8 @@ import ExeciseEvents from '@/components/ExeciseEvents'
 import ExeciseSlot from '@/components/ExeciseSlot'
 import ExeciseInlineTemplate from '@/components/ExeciseInlineTemplate'
 import ExeciseAjax from '@/components/ExeciseAjax'
+import ShareState from '@/components/ShareState'
+import CustomInput from '@/components/CustomInput'
 // import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
@@ -94,6 +96,18 @@ export default new Router({
       path: '/ajax',
       name: 'Ajax',
       component: ExeciseAjax,
+      props: {  }
+    },
+    {
+      path: '/shareState',
+      name: 'ShareState',
+      component: ShareState,
+      props: {  }
+    },
+    {
+      path: '/customInput',
+      name: 'CustomInput',
+      component: CustomInput,
       props: {  }
     }
   ]

@@ -14,6 +14,8 @@
         <li><router-link to="/slot">Slot</router-link></li>
         <li><router-link to="/inlineTemplate">InlineTemplate</router-link></li>
         <li><router-link to="/ajax">Ajax</router-link></li>
+        <li><router-link to="/shareState">Share State101</router-link></li>
+        <li><router-link to="/customInput">custom input</router-link></li>
     </ul>
     <router-view/>
   </div>

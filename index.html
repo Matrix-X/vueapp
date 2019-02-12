@@ -7,10 +7,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
   </head>
   <body>
+    <div id='one' class="container">
+      @{{ user.name }}
+    </div>
+
+    <div id='two' class="container">
+      @{{ user.name }}
+    </div>
     <div id="app"></div>
     <!-- built files will be auto injected -->
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    
+    <script>
+    let source = {
+      user: {
+        name: "John Doe"
+      }
+    }
+  </script>
   </body>
 </html>
